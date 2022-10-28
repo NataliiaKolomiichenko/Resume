@@ -1,0 +1,18 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #f5f7fa;
+}
+
+.main-container-section {
+    display: flex;
+    flex-direction: reverse;
+    width: 1200px;
+    background-color: #fff;
+    margin: 40px auto;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+    display: flex;
+
+}
