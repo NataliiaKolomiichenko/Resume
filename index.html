@@ -11,35 +11,37 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/index.css" />
     <title>Resume</title>
   </head>
   <body>
     <main>
-      <div class="main-container-section">
-        <div>
-          <section>
-            <img src="./image/photo.jpg" alt="Photo" width="200" />
+      <div class="main-container">
+        <div class="sidebar">
+          <img src="./image/photo.jpg" alt="Photo" class="sidebar__image" />
+          <section class="sidebar__section">
             <h2>Contacts</h2>
-            <ul>
-              <li><a href="tel:+380930311800">+38(093)031-18-00</a></li>
-              <li>
-                <a href="mailto:gella1996nr@gmail.com">gella1996nr@gmail.com</a>
-              </li>
-              <li>
-                <a href="https://github.com/NataliiaKolomiichenko"
-                  >https://github.com/NataliiaKolomiichenko</a
-                >
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/nataliia-kolomiichenko/"
-                  >https://www.linkedin.com/in/nataliia-kolomiichenko/</a
-                >
-              </li>
-              <li>Kyiv, Ukraine</li>
-            </ul>
+            <a href="tel:+380930311800">+38(093)031-18-00</a>
+            <a href="mailto:gella1996nr@gmail.com">gella1996nr@gmail.com</a>
+            <p>Kyiv, Ukraine</p>
+            <div class="sidebar_social-net">
+                <a href="https://github.com/NataliiaKolomiichenko">
+                  <svg width="36" height="36" class="sidebar__icon">
+                    <use href="./image/icons.svg#icon-github"></use>
+                  </svg>
+                </a>                
+            <a href="https://www.linkedin.com/in/nataliia-kolomiichenko/">
+                <svg width="36" height="36" class="sidebar__icon">
+                    <use href="./image/icons.svg#icon-linkedin"></use>
+                  </svg>
+              </a>
+            </div>
           </section>
-          <section>
+          <section class="sidebar__section">
             <h2>Tech Skills</h2>
             <ul>
               <li>HTML5</li>
@@ -50,7 +52,7 @@
               <li>React/Redux</li>
             </ul>
           </section>
-          <section>
+          <section class="sidebar__section">
             <h2>Soft Skills</h2>
             <ul>
               <li>Attentive</li>
@@ -68,7 +70,7 @@
               <li>Willingness to learn</li>
             </ul>
           </section>
-          <section>
+          <section class="sidebar__section">
             <h2>Language Skills</h2>
             <ul>
               <li>Ukrainian - native</li>
@@ -78,136 +80,132 @@
           </section>
         </div>
 
-        <div>
+        <div class="about">
           <section>
-            <h1>Nataliia Kolomiichenko</h1>
+            <h1 class="about__name">Nataliia Kolomiichenko</h1>
+            <p class="about__summary">Summary</p>
             <p>
-              I am a Junior Front-End developer. I focus on HTML5, CSS3, JS,
-              React. English — Intermediate. Looking for a remote job.
-              Development, practice and work for the result are important for
-              me. I intend to develop innovative technologies and deliver value
-              to people. (EXAMPLE)
+              I am a Junior Front-End developer. I focus on HTML5, CSS3, JS, React. English — pre-intermediate. I'm looking for a job as an intern/junior front-end developer or full-stack developer. Development, practice and work for the result are important for me.
             </p>
           </section>
-          <section>
-            <h2>Projects</h2>
-          </section>
-          <section>
-            <h2>Work Experience</h2>
+          <section class="about__section">
+            <h2 class="about__title">Projects</h2>
             <ul>
               <li>
-                <h3>Молодший аналітик консолідованої інформації</h3>
-                <p>Ardenta</p>
-                <p>21.09.2022 — сьогодні</p>
+                <h2><a href="https://peteryurich.github.io/filmoteka_08/" class="about__project-title">Filmoteka (team project)</a></h2>
+                <a href="https://github.com/PeterYurich/filmoteka_08">Git page</a>
+                <p>Project about searching movies, and adding favorite movies to a client personal library. I was responsible for the general HTTP request. Using pure JavaScript, npm-packages and SCSS.</p>
+              </li>
+              <li><h2><a href="https://myrsem.github.io/project-team-14/" class="about__project-title">Hellish English (team project)</a></h2>
+                <a href="https://github.com/myrsem/project-team-14">Git page</a>
+                <p>The website of the English language school, which is engaged in comprehensive preparation for external examinations. I was responsible for part of the course program. Using HTML, CSS/SASS, Parcel</p>
+              </li>
+              <li><h2><a href="https://nataliiakolomiichenko.github.io/goit-markup-hw-08/" class="about__project-title">WebStudio (individual project)</a></h2>
+                <a href="https://github.com/NataliiaKolomiichenko/goit-markup-hw-08">Git page</a>
+                <p>Using HTML, CSS/SASS </p></li>
+                <p>The website of a company engaged in the development of designer desktop and mobile applications</p>
+            </ul>
+          </section>
+          <section class="about__section">
+            <h2 class="about__title">Work Experience</h2>
+            <ul>
+              <li>
+                <h3 class="about__work-title">Junior analyst of consolidated information</h3>
+                <p>Ardenta, September 2022 — today</p>
                 <ul>
-                  <li>Збір і обробка даних;</li>
+                  <li>Data collection and processing;</li>
                   <li>
-                    Участь в підготовці документації з ТЦУ та звітів про
-                    контрольовані операції;
+                    Participation in the preparation of documentation on
+                    transfer pricing and reports on controlled transactions;
                   </li>
                   <li>
-                    Написання висновків стосовно контрольованих операцій
-                    документації з ТЦУ та звітів про контрольовані операції;
+                    Writing conclusions on controlled transactions, transfer
+                    pricing documentation and reports on controlled
+                    transactions;
                   </li>
-                  <li>Написання аналітичних статей стосовно ТЦУ.</li>
+                  <li>Writing analytical articles on transfer pricing.</li>
                 </ul>
               </li>
               <li>
-                <h3>Фахівець-аналітик з дослідення товарного ринку</h3>
-                <p>CORAL TRAVEL</p>
-                <p>20.05.2019 — 30.04.2022</p>
+                <h3 class="about__work-title">Analyst specialist in product market research</h3>
+                <p>Coral Travel Ukraine, May 2019 — April 2022</p>
+                <p></p>
                 <ul>
                   <li>
-                    Аналіз цін та підготовка аналітичних звітів, висновків,
-                    рекомендацій;
+                    Price analysis and preparation of analytical reports,
+                    conclusions, recommendations;
                   </li>
                   <li>
-                    Аналіз впровадженних стратегій ціноутворення та впливу на
-                    фінансові результати;
+                    Analysis of implemented pricing strategies and impact on
+                    financial results;
                   </li>
-                  <li>Контроль введених данних;</li>
+                  <li>Control of entered data;</li>
+                  <li>Control of package and other products by countries;</li>
                   <li>
-                    Контроль пакетних та інших продуктів по країнам відпочинку;
-                  </li>
-                  <li>
-                    Контроль за заповненням чартерних рейсів по пакетних
-                    продуктах;
+                    Control over the filling of charter flights for package
+                    products;
                   </li>
                   <li>
-                    Співпраця з партнерами щодо тарифів готельних продуктів.
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <h3>Головний державний інспектор</h3>
-                <p>Інформаційно-довідковий департамент ДФС</p>
-                <p>06.2018 — 04.2019</p>
-                <p>Звання: Молодший інспектор податкової та митної справи</p>
-                <ul>
-                  <li>
-                    Надання фізичним та юридичним особам інформаційно-довідкових
-                    послуг з питань оподаткування (конкретніше з податку на
-                    додану вартість) та іншого законодавства, контроль за
-                    додержанням якого покладено на ДФС за допомогою Бази знань,
-                    інших офіційних джерел інформації за тематикою, визначеною
-                    відповідними наказами ІДД ДФС;
-                  </li>
-                  <li>
-                    Надання структурним підрозділам ДФС та її територіальним
-                    органам, фізичним та юридичним особам інформації щодо
-                    використання ЗІР на офіційному веб-порталі ДФС;
-                  </li>
-                  <li>
-                    Брати участь у виконанні завдань та доручень керівництва ДФС
-                    та ІДД ДФС з питань, що належать до компетенції відділу;
-                  </li>
-                  <li>
-                    Приймання та реєстрація в автоматизованій системі
-                    електронного документообігу усних звернень громадян, які
-                    надійшли засобами телефонного зв'язку через Контакт-центр
-                    ІДД ДФС;
-                  </li>
-                  <li>
-                    Виконання вимог організаційно-розпорядчих документів ДФС та
-                    ІДД ДФС, а також інших доручень керівництва ІДД ДФС,
-                    управління і відділу.
+                    Cooperation with partners regarding the rates of hotel
+                    products.
                   </li>
                 </ul>
               </li>
               <li>
-                <h3>
-                  Оператор-консультант в інформаційно-консультаційному відділі
-                </h3>
-                <p>АН «Благовіст»</p>
-                <p>09.2016 — 05.2018</p>
+                <h3 class="about__work-title">Chief State Inspector</h3>
+                <p>Information and reference department of the STS, June 2018 - April 2019</p>
+                <p>Rank: Junior inspector of tax and customs affairs</p>
                 <ul>
                   <li>
-                    Надання інформаційно-консультаційних послуг при купівлі та
-                    оренди нерухомості (житлової, нежитловий фонд) способами
-                    електронного зв'язку, а саме: телефон, електронна пошта,
-                    інтернет - консультації (чат);
+                    Provision of information and reference services to
+                    individuals and legal entities on taxation issues (more
+                    specifically, value added tax) and other legislation, the
+                    control of compliance with which is entrusted to the STS
+                    with the help of the Knowledge Base, other official sources
+                    of information on the topics specified by the relevant
+                    orders Information and reference department of the STS (IRD
+                    of the STS);
                   </li>
                   <li>
-                    Ведення і підтримка в актуальному стані програмного продукту
-                    «House CRM»;
+                    Providing structural units of the STS and its territorial
+                    bodies, individuals and legal entities with information
+                    regarding the use of the Public Information and Reference
+                    Resource on the official web portal of the STS;
                   </li>
-                  <li>Збір статистичних даних по роботі рекламних джерел;</li>
-                  <li>Ділове листування в межах компетенції.</li>
+                  <li>
+                    To participate in the performance of tasks and assignments
+                    of the management of the STS and the IRD of the STS on
+                    matters that belong to the competence of the department;
+                  </li>
+                  <li>
+                    Acceptance and registration in the automated system of
+                    electronic document circulation of oral appeals of citizens,
+                    which came by means of telephone communication through the
+                    Contact Center IRD of the STS;
+                  </li>
+                  <li>
+                    Fulfilling the requirements of organizational and
+                    administrative documents of the STS and IRD of the STS, as
+                    well as other instructions of the management of the IRD of
+                    the STS, management and department.
+                  </li>
+                </ul>
+              </li>
                 </ul>
               </li>
             </ul>
           </section>
-          <section>
-            <h2>Education</h2>
-            <h3>Університет економіки та права "КРОК"</h3>
-            <p>Економіка і підприємництво, 2016-2017</p>
-            <p>Бакалавр (диплом з відзнакою), Фінанси і кредит</p>
+          <section class="about__section">
+            <h2 class="about__title">Education</h2>
+            <h3 class="education__study-place">University "KROK"</h3>
+            <p class="education__item">Economy and entrepreneurship, 2016-2017</p>
+            <p class="education__item">Bachelor (honors degree), Finance and Credit</p>
           </section>
-          <section>
-            <h2>Additional Education</h2>
-            <h3>IT School GoIT</h3>
-            <p>FullStack developer</p>
-            <p>January 2022 - today, Ukraine</p>
+          <section class="about__section">
+            <h2 class="about__title">Additional Education</h2>
+            <h3 class="education__study-place">IT School GoIT</h3>
+            <p class="education__item">FullStack developer</p>
+            <p class="education__item">January 2022 - today, Ukraine</p>
           </section>
         </div>
       </div>

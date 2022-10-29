@@ -1,18 +1,107 @@
+/* Common styles */
+
 body {
     font-family: "Montserrat", sans-serif;
     background-color: #f5f7fa;
 }
 
-.main-container-section {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.main-container {
     display: flex;
-    flex-direction: reverse;
+
     width: 1200px;
     background-color: #fff;
     margin: 40px auto;
+    padding: 15px;
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
 }
 
-.sidebar {
-    display: flex;
+/* Sidebar Styles */
 
+.sidebar {
+    background-color: #07575B;
+    color: #C4DFE6;
+}
+
+.sidebar__section {
+    margin: 20px 20px 0 20px;
+}
+
+.sidebar__image {
+    width: 100%;
+}
+
+.sidebar__icon {
+    fill: #FFFFFF;
+}
+
+.sidebar_social-net {
+    display: flex;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+/* About */
+.about {
+    padding: 30px;
+    margin: 10px;
+    color: #003B46;
+}
+
+.about__section {
+    margin-top: 10px;
+}
+
+.about__name {
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 55px;
+}
+
+.about__title, .about__summary {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+}
+
+.about__project-title, .about__work-title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.education__study-place, .education__item {
+    padding-left: 40px;
 }
