@@ -75,7 +75,7 @@ a {
 
 /* About */
 .about {
-    padding: 30px;
+    padding: 25px;
     margin: 10px;
     color: #003B46;
 }
@@ -100,6 +100,15 @@ a {
     font-weight: bold;
     font-size: 16px;
     line-height: 20px;
+}
+
+.about__project-title {
+    display: inline-flex;
+    align-items: center;
+}
+
+.about__project-icon {
+    margin-left: 5px;
 }
 
 .education__study-place, .education__item {
